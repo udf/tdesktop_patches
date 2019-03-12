@@ -17,11 +17,8 @@ Apply the patches:
 1. `git apply /path/to/patch.patch` for each patch that you want
 1. `cd ../..`
 
-Build Telegram Desktop:
-1. `makepkg --noextract`
-
-Install Telegram:
-1. `sudo pacman -U telegram-desktop-dev-*.pkg.tar.xz`
+Build Telegram Desktop with `makepkg --noextract`  
+Install Telegram with `sudo pacman -U telegram-desktop-dev-*.pkg.tar.xz`
 
 # Credit
-@streetwalrus for [most of the patch ideas](https://github.com/Streetwalrus/dotfiles/blob/571c41d7db651c42068a8101389074027d5ce732/scripts/telegram-desktop).
+[@streetwalrus](https://github.com/Streetwalus) for [most of the patch ideas](https://github.com/Streetwalrus/dotfiles/blob/571c41d7db651c42068a8101389074027d5ce732/scripts/telegram-desktop).
