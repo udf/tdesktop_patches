@@ -1,0 +1,13 @@
+diff --git a/Telegram/SourceFiles/boxes/confirm_box.cpp b/Telegram/SourceFiles/boxes/confirm_box.cpp
+index 0db838bd1..d96f537c0 100644
+--- a/Telegram/SourceFiles/boxes/confirm_box.cpp
++++ b/Telegram/SourceFiles/boxes/confirm_box.cpp
+@@ -515,7 +515,7 @@ void DeleteMessagesBox::prepare() {
+ 		}
+ 		auto count = int(_ids.size());
+ 		if (canDeleteAllForEveryone) {
+-			_forEveryone.create(this, forEveryoneText, false, st::defaultBoxCheckbox);
++			_forEveryone.create(this, forEveryoneText, true, st::defaultBoxCheckbox);
+ 		} else if (peer && peer->isChannel()) {
+ 			if (peer->isMegagroup()) {
+ 				text += qsl("\n\n") + lng_delete_for_everyone_hint(lt_count, count);
