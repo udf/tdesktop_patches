@@ -1,3 +1,5 @@
+# Note: Please use the aur package instead: [telegram-desktop-udf-patched](https://aur.archlinux.org/packages/telegram-desktop-udf-patched)
+
 # tdesktop patches
 Various patches for [Telegram desktop](https://github.com/telegramdesktop/tdesktop/)
 
