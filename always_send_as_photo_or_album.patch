@@ -1,15 +1,15 @@
 diff --git a/Telegram/SourceFiles/boxes/send_files_box.cpp b/Telegram/SourceFiles/boxes/send_files_box.cpp
-index 72712713d..0b4924170 100644
+index 2f4c45c48..ed9bf4bb6 100644
 --- a/Telegram/SourceFiles/boxes/send_files_box.cpp
 +++ b/Telegram/SourceFiles/boxes/send_files_box.cpp
-@@ -1459,14 +1459,6 @@ void SendFilesBox::initSendWay() {
+@@ -1498,14 +1498,6 @@ void SendFilesBox::initSendWay() {
  				? SendFilesWay::Album
  				: SendFilesWay::Photos;
  		}
--		const auto currentWay = Auth().settings().sendFilesWay();
--		if (currentWay == SendFilesWay::Files) {
--			return currentWay;
--		} else if (currentWay == SendFilesWay::Album) {
+-		const auto way = _controller->session().settings().sendFilesWay();
+-		if (way == SendFilesWay::Files) {
+-			return way;
+-		} else if (way == SendFilesWay::Album) {
 -			return _list.albumIsPossible
 -				? SendFilesWay::Album
 -				: SendFilesWay::Photos;
